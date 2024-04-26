@@ -9,12 +9,12 @@ graph = {
 
 visited = set()
 
-def dfs(node):
+def dfs(node, depth=0):
     if node not in visited:
-        print(node)
+        print(node, depth)
         visited.add(node)
         for neighbor in graph[node]:
-            dfs(neighbor)
+            dfs(neighbor, depth + 1)
 
 # Начинаем обход графа с вершины 'A'
 dfs('A')
