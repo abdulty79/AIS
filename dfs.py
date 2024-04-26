@@ -17,4 +17,6 @@ def dfs(node, depth=0):
             dfs(neighbor, depth + 1)
 
 # Начинаем обход графа с вершины 'A'
+
 dfs('A') #новый коментарий
+
